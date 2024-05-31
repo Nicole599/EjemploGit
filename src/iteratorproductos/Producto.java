@@ -9,14 +9,14 @@ package iteratorproductos;
  *
  * @author LENOVO
  */
-public class producto {
+public class Producto {
     private String id;
     private String nombre;
 
-    public producto() {
+    public Producto() {
     }
 
-    public producto(String id, String nombre) {
+    public Producto(String id, String nombre) {
         this.id = id;
         this.nombre = nombre;
     }
@@ -36,6 +36,7 @@ public class producto {
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
+
 
     @Override
     public String toString() {

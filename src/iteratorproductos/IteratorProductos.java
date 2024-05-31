@@ -21,24 +21,22 @@ public class IteratorProductos {
     public static void main(String[] args) {
         // TODO code application logic here
         //crear lista
-        ArrayList<producto> productos=new ArrayList<>();
-        productos.add(new producto("1","Tornillos"));
-        productos.add(new producto("2","Tuercas"));
-        productos.add(new producto("3","Clavos"));
-        productos.add(new producto("4","Pintura"));
-        productos.add(new producto("5","Martillo"));
-        productos.add(new producto("6","Taladro"));
+        ArrayList<Producto> productos=new ArrayList<>();
+        productos.add(new Producto("1","Tornillos"));
+        productos.add(new Producto("2","Tuercas"));
+        productos.add(new Producto("3","Clavos"));
+        productos.add(new Producto("4","Pintura"));
         
         
         JOptionPane.showMessageDialog(null,imprimirProductos(productos));
     }
     
     //Metodo estatico
-    private static String imprimirProductos(ArrayList<producto> productos){
+    private static String imprimirProductos(ArrayList<Producto> productos){
         //variable tipo string
         String lista ="";
         //Clase iterator resive un tipo
-        Iterator <producto> iterator=productos.iterator();
+        Iterator <Producto> iterator=productos.iterator();
         
         //bucle while hasnext retorna booleano el cual indica si hay elemento o no sigueinte de la lista
         while(iterator.hasNext()){
